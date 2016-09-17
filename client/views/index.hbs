@@ -9,3 +9,11 @@
   <input type="submit" name="Send"/>
 
 </form>
+{{# if data}}
+
+    {{#each data}} 
+      Name: {{ name}} </br>
+      Link: <a href="{{ url}}">Link</a></br> 
+      price: {{ zindex.$t }} </br> 
+    {{/each}}
+{{/if}}
